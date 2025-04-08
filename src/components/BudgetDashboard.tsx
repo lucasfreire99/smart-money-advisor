@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { useBudget } from '@/context/BudgetContext';
 import BudgetCard from './BudgetCard';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts';
+import ExportButton from './ExportButton';
 
 const BudgetDashboard: React.FC = () => {
   const { summary } = useBudget();
@@ -26,8 +26,9 @@ const BudgetDashboard: React.FC = () => {
   return (
     <div className="space-y-6">
       <Card className="shadow-md">
-        <CardHeader>
+        <CardHeader className="flex flex-row items-center justify-between">
           <CardTitle className="text-xl">Visão Geral</CardTitle>
+          <ExportButton />
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
