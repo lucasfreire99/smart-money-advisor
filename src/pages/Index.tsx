@@ -15,8 +15,8 @@ const App: React.FC = () => {
 
   return (
     <BudgetProvider>
-      <div className="min-h-screen bg-gray-50">
-        <header className="bg-white shadow-sm py-4">
+      <div className="min-h-screen bg-background">
+        <header className="bg-card shadow-sm py-4">
           <div className="container mx-auto px-4">
             <h1 className="text-2xl font-bold text-center">Smart Money Advisor</h1>
             <p className="text-center text-muted-foreground mt-1">Método 50-30-20</p>
